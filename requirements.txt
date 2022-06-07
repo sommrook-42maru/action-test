@@ -1,4 +1,4 @@
-uvicorn==0.12.3
+uvicorn
 aiofiles==0.6.0
 aiohttp==3.6.2
 asgiref==3.2.10
