@@ -24,6 +24,9 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Executing remote ssh commands using ssh key
+      uses: appleboy/ssh-action@master
+      with: 
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
